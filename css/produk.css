@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|JoseFin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans',sans-serif;
+}
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.main_caontainer{
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    align-items: center;
+    position: fixed;
+    background-color:  rgb(17, 90, 163);
+}
+.navbar .navbar_items li:hover, .active{
+    border-bottom:2px solid deepskyblue;
+    color: white;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo a{
+      font-family: 'Allura',cursive;
+      font-size: 40px;
+      color: white;
+}
+.logo a:hover{
+    color: deepskyblue;
+}
+.navbar .navbar_items ul{
+    display: flex;
+}
+.navbar .navbar_items ul li {
+    text-transform: uppercase;
+    margin: 0 10px; 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+    
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    color: deepskyblue;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: deepskyblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color:deepskyblue; 
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media (max-width:720px){
+    .navbar{
+        height: auto;
+        flex-direction: column
+    }
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 25px;
+    }
+    .navbar ul li{
+        margin-bottom: 5px;
+    }
+    .konten img{
+        margin-top: 300px;
+    }
+ }
+
+/* konten */
+.konten{
+    width: 65%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 1%;
+}
+
+.konten img{
+    width: 35%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7%;
+}
+.review, .detail{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+.panah{
+    padding: 0.5% 0 0.5% 0;
+}
+.panah  .checked{
+    color: red;
+
+}
+.star .checked{
+    color:orange;
+}
+.reviewkoonten h2{
+    color: rgb(17, 90, 163);
+}
+.konten p{
+    font-size: 14px;
+}
+
+/* form */
+button{
+    background-color: lime;
+    border-radius:10%;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+}
+.contactus{
+    /* padding: 5% 10%; */
+    text-align: justify;
+    padding-bottom: 5%;
+}
+.forminput{
+    margin-bottom: 15px;
+}
+.forminput input[type="text"]{
+    width: 45%;
+    padding: 12px 20px;
+    border: 1px solid #cccccc;
+}
+.forminput textarea{
+    width: 45%;
+    padding: 12px 20px;
+    height: 100px;
+    resize: none;
+} 
+
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    background:rgb(17, 90, 163);
+    padding: 20px 0;
+}   
+.footer a{
+    color: #ddd;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.arrow{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    background: deepskyblue;
+    border-radius: 50%;
+}
+.arrow img{
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
