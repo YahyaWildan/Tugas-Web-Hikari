@@ -93,14 +93,17 @@ li.dropdown {
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
     color: white;
     background-color:deepskyblue; 
 }
+.dropdown-content a{
+    color: white;
+}
   
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: block;
+    background-color: rgb(17, 90, 163);
 }
 @media (max-width:720px){
     .navbar{

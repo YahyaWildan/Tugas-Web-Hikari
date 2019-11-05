@@ -93,15 +93,18 @@ li.dropdown {
   display: block;
   text-align: left;
 }
-
+.dropdown-content a{
+    color: white;
+}
 .dropdown-content a:hover {
-    /* color: white; */
-    background-color:white; 
+    color: white;
+    background-color:deepskyblue; 
 }
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+    background-color: rgb(17, 90, 163);
+}
 /* banner image */
 .banner_image{
     background: url("../img/bg1.jpg") no-repeat top center;
